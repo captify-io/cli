@@ -1,0 +1,42 @@
+{
+  "name": "@captify-io/{{APP_SLUG}}",
+  "version": "1.0.0",
+  "description": "{{DESCRIPTION}}",
+  "type": "module",
+  "engines": {
+    "node": ">=18.18 || >=20"
+  },
+  "packageManager": "npm@9.8.1",
+  "scripts": {
+    "dev": "next dev --turbo -p {{PORT}}",
+    "build": "next build",
+    "start": "next start -p ${PORT:-{{PORT}}}",
+    "lint": "next lint",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@captify-io/core": "^2.0.4",
+    "@tailwindcss/postcss": "^4.1.13",
+    "next": "^15.5.2",
+    "next-auth": "5.0.0-beta.25",
+    "react": "19.1.1",
+    "react-dom": "19.1.1",
+    "tailwindcss": "^4.1.13",
+    "typescript": "5.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.1",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "autoprefixer": "^10.4.21",
+    "eslint": "^9.16.0",
+    "eslint-config-next": "^15.5.2",
+    "postcss": "^8.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captify-io/{{APP_SLUG}}.git"
+  },
+  "author": "Captify IO",
+  "license": "MIT"
+}

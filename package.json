@@ -1,0 +1,37 @@
+{
+  "name": "create-captify-app",
+  "version": "1.0.0",
+  "description": "CLI tool to scaffold new Captify plugin applications",
+  "type": "module",
+  "bin": {
+    "create-captify-app": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "upgrade.js",
+    "templates"
+  ],
+  "engines": {
+    "node": ">=18.18 || >=20"
+  },
+  "keywords": [
+    "captify",
+    "cli",
+    "scaffold",
+    "plugin",
+    "nextjs"
+  ],
+  "scripts": {
+    "test": "node index.js test-app"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2",
+    "picocolors": "^1.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/captify-io/cli.git"
+  },
+  "author": "Captify IO",
+  "license": "MIT"
+}
