@@ -2,7 +2,7 @@
 @import "tailwindcss";
 
 /* Import theme variables from @captify-io/core */
-@import "@captify-io/core/globals.css";
+@import "@captify-io/core/themes.css";
 
 /* Content sources for Tailwind CSS v4 */
 @source "../**/*.{js,ts,jsx,tsx,mdx}";

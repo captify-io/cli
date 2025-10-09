@@ -114,8 +114,8 @@ export default function CaptifyPageLayout({
   params,
 }: CaptifyPageLayoutProps) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body>
+    <html lang="en" suppressHydrationWarning className="h-full">
+      <body className="h-full m-0 p-0">
         <SessionProvider
           refetchInterval={0}
           refetchOnWindowFocus={false}
@@ -127,3 +127,6 @@ export default function CaptifyPageLayout({
     </html>
   );
 }
+
+// Force dynamic rendering for authentication
+export const dynamic = "force-dynamic";
